@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  tarantool-cluster:
+    container_name: cluster_cartridge
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+
+    volumes:
+      - ./cluster:/app
+      - ./entrypoint:/entrypoint
+    command: sh -c "chmod +x /entrypoint/entrypoint.sh && sh /entrypoint/entrypoint.sh"
+    ports:
+      - '3301:3301'
+      - '8081:8081'
+    networks:
+      - cluster_cartridge
+
+networks:
+  cluster_cartridge:
+    driver: bridge

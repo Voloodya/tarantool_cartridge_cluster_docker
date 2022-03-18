@@ -1,0 +1,135 @@
+2022-03-18 11:43:48.992 [3047] main/103/init.lua I> Using advertise_uri "localhost:3302"
+2022-03-18 11:43:48.992 [3047] main/103/init.lua I> Membership encryption enabled
+2022-03-18 11:43:48.994 [3047] main/103/init.lua I> Probe uri was successful
+2022-03-18 11:43:48.995 [3047] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3303
+2022-03-18 11:43:48.996 [3047] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3303
+2022-03-18 11:43:48.997 [3047] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
+2022-03-18 11:43:48.998 [3047] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3301
+2022-03-18 11:43:48.998 [3047] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3302
+2022-03-18 11:43:48.999 [3047] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3302
+2022-03-18 11:43:49.005 [3047] main/107/http/0.0.0.0:8082 I> started
+2022-03-18 11:43:49.006 [3047] main/103/init.lua I> Listening HTTP on 0.0.0.0:8082
+2022-03-18 11:43:49.007 [3047] main/108/console/unix/:/tmp/run/test-cluster.s1-master.control I> started
+2022-03-18 11:43:49.288 [3047] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
+2022-03-18 11:43:49.322 [3047] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
+2022-03-18 11:43:49.379 [3047] main/109/remote_control/0.0.0.0:3302 I> started
+2022-03-18 11:43:49.379 [3047] main/103/init.lua I> Remote control bound to 0.0.0.0:3302
+2022-03-18 11:43:49.380 [3047] main/103/init.lua I> Remote control ready to accept connections
+2022-03-18 11:43:49.381 [3047] main/103/init.lua I> Instance state changed:  -> Unconfigured
+2022-03-18 11:43:49.381 [3047] main/103/init.lua I> Cartridge 2.7.3
+2022-03-18 11:43:49.382 [3047] main/103/init.lua I> server alias s1-master
+2022-03-18 11:43:49.382 [3047] main/103/init.lua I> advertise uri localhost:3302
+2022-03-18 11:43:49.382 [3047] main/103/init.lua I> working directory /tmp/data/test-cluster.s1-master
+2022-03-18 11:43:49.383 [3047] main C> entering the event loop
+2022-03-18 11:43:59.607 [3047] main/115/remote_control/127.0.0.1:52074 I> Instance state changed: Unconfigured -> BootstrappingBox
+2022-03-18 11:43:59.608 [3047] main/115/remote_control/127.0.0.1:52074 confapplier.lua:460 W> Calling box.cfg()...
+2022-03-18 11:43:59.613 [3047] main/115/remote_control/127.0.0.1:52074 C> Tarantool 2.8.3-65-gb34edbf
+2022-03-18 11:43:59.613 [3047] main/115/remote_control/127.0.0.1:52074 C> log level 5
+2022-03-18 11:43:59.613 [3047] main/115/remote_control/127.0.0.1:52074 I> wal/engine cleanup is paused
+2022-03-18 11:43:59.616 [3047] main/115/remote_control/127.0.0.1:52074 I> mapping 268435456 bytes for memtx tuple arena...
+2022-03-18 11:43:59.616 [3047] main/115/remote_control/127.0.0.1:52074 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2022-03-18 11:43:59.616 [3047] main/115/remote_control/127.0.0.1:52074 I> mapping 134217728 bytes for vinyl tuple arena...
+2022-03-18 11:43:59.625 [3047] main/115/remote_control/127.0.0.1:52074 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-18 11:43:59.626 [3047] main/115/remote_control/127.0.0.1:52074 I> instance uuid f5d4dee8-b23b-469c-82de-4facf05b91da
+2022-03-18 11:43:59.626 [3047] main/116/remote_control/127.0.0.1:52074 I> Cartridge 2.7.3
+2022-03-18 11:43:59.627 [3047] main/116/remote_control/127.0.0.1:52074 I> server alias s1-master
+2022-03-18 11:43:59.627 [3047] main/116/remote_control/127.0.0.1:52074 I> advertise uri localhost:3302
+2022-03-18 11:43:59.627 [3047] main/116/remote_control/127.0.0.1:52074 I> working directory /tmp/data/test-cluster.s1-master
+2022-03-18 11:43:59.628 [3047] main/115/remote_control/127.0.0.1:52074 I> tx_binary: stopped
+2022-03-18 11:43:59.628 [3047] main/115/remote_control/127.0.0.1:52074 I> initializing an empty data directory
+2022-03-18 11:43:59.645 [3047] main/115/remote_control/127.0.0.1:52074 I> assigned id 1 to replica f5d4dee8-b23b-469c-82de-4facf05b91da
+2022-03-18 11:43:59.645 [3047] main/115/remote_control/127.0.0.1:52074 I> cluster uuid 540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92
+2022-03-18 11:43:59.657 [3047] snapshot/101/main I> saving snapshot `/tmp/data/test-cluster.s1-master/00000000000000000000.snap.inprogress'
+2022-03-18 11:43:59.660 [3047] snapshot/101/main I> done
+2022-03-18 11:43:59.661 [3047] main/115/remote_control/127.0.0.1:52074 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-18 11:43:59.661 [3047] main/115/remote_control/127.0.0.1:52074 I> ready to accept requests
+2022-03-18 11:43:59.661 [3047] main/117/gc I> wal/engine cleanup is resumed
+2022-03-18 11:43:59.662 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'custom_proc_title' configuration option to "test-cluster@s1-master"
+2022-03-18 11:43:59.662 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'log_level' configuration option to 5
+2022-03-18 11:43:59.662 [3047] main/118/checkpoint_daemon I> scheduled next checkpoint for Fri Mar 18 13:34:55 2022
+2022-03-18 11:43:59.669 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'instance_uuid' configuration option to "f5d4dee8-b23b-469c-82de-4facf05b91da"
+2022-03-18 11:43:59.672 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'replication_connect_quorum' configuration option to 0
+2022-03-18 11:43:59.672 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'log_format' configuration option to "plain"
+2022-03-18 11:43:59.673 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'replicaset_uuid' configuration option to "540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92"
+2022-03-18 11:43:59.676 [3047] main/115/remote_control/127.0.0.1:52074 I> Making sure user "admin" exists...
+2022-03-18 11:43:59.676 [3047] main/115/remote_control/127.0.0.1:52074 I> Granting replication permissions to "admin"...
+2022-03-18 11:43:59.677 [3047] main/115/remote_control/127.0.0.1:52074 I> Setting password for user "admin" ...
+2022-03-18 11:43:59.677 [3047] main/115/remote_control/127.0.0.1:52074 I> Remote control stopped
+2022-03-18 11:43:59.678 [3047] main/109/remote_control/0.0.0.0:3302 I> stopped
+2022-03-18 11:43:59.681 [3047] main/115/remote_control/127.0.0.1:52074 I> tx_binary: stopped
+2022-03-18 11:43:59.681 [3047] main/115/remote_control/127.0.0.1:52074 I> tx_binary: bound to 0.0.0.0:3302
+2022-03-18 11:43:59.681 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'listen' configuration option to "3302"
+2022-03-18 11:43:59.682 [3047] main/115/remote_control/127.0.0.1:52074 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
+2022-03-18 11:43:59.682 [3047] main/115/remote_control/127.0.0.1:52074 I> connecting to 2 replicas
+2022-03-18 11:43:59.682 [3047] main/115/remote_control/127.0.0.1:52074 C> failed to connect to 2 out of 2 replicas
+2022-03-18 11:43:59.683 [3047] main/115/remote_control/127.0.0.1:52074 C> leaving orphan mode
+2022-03-18 11:43:59.683 [3047] main/115/remote_control/127.0.0.1:52074 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-18 11:43:59.683 [3047] main/115/remote_control/127.0.0.1:52074 I> set 'replication' configuration option to ["admin@localhost:3302","admin@localhost:3303"]
+2022-03-18 11:43:59.683 [3047] main/115/remote_control/127.0.0.1:52074 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
+2022-03-18 11:43:59.683 [3047] main/115/remote_control/127.0.0.1:52074 I> Instance state changed: BoxConfigured -> ConfiguringRoles
+2022-03-18 11:43:59.684 [3047] main/115/remote_control/127.0.0.1:52074 I> Failover disabled
+2022-03-18 11:43:59.684 [3047] main/115/remote_control/127.0.0.1:52074 I> Replicaset cd5fbf59-7fd2-457f-a593-5077b5c29af7: new leader 2d902871-ab2e-4cf2-a8d0-8315a2ba266f ("localhost:3301"), was nil
+2022-03-18 11:43:59.684 [3047] main/115/remote_control/127.0.0.1:52074 I> Replicaset 540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92 (me): new leader f5d4dee8-b23b-469c-82de-4facf05b91da (me), was nil
+2022-03-18 11:43:59.684 [3047] main/115/remote_control/127.0.0.1:52074 I> Replicaset bc468503-1665-4b5b-80ed-7b6dc9a186be: new leader 83a2ffbd-ff37-4c66-9ec1-d35fc9633bd2 ("localhost:3304"), was nil
+2022-03-18 11:43:59.685 [3047] main/115/remote_control/127.0.0.1:52074 I> Reconfiguring vshard.storage...
+2022-03-18 11:43:59.685 [3047] main/115/remote_control/127.0.0.1:52074 I> Starting configuration of replica f5d4dee8-b23b-469c-82de-4facf05b91da
+2022-03-18 11:43:59.685 [3047] main/115/remote_control/127.0.0.1:52074 I> I am master
+2022-03-18 11:43:59.686 [3047] main/115/remote_control/127.0.0.1:52074 I> Taking on replicaset master role...
+2022-03-18 11:43:59.686 [3047] main/115/remote_control/127.0.0.1:52074 I> Box has been configured
+2022-03-18 11:43:59.686 [3047] main/115/remote_control/127.0.0.1:52074 I> Initializing schema {0.1.15.0}
+2022-03-18 11:43:59.687 [3047] main/135/applier/admin@localhost:3302 I> remote master f5d4dee8-b23b-469c-82de-4facf05b91da at 127.0.0.1:3302 running Tarantool 2.8.3
+2022-03-18 11:43:59.687 [3047] main/134/applier/admin@localhost:3303 I> remote master 00000000-0000-0000-0000-000000000000 at 127.0.0.1:3303 running Tarantool 1.10.0
+2022-03-18 11:43:59.688 [3047] main/135/applier/admin@localhost:3302 C> leaving orphan mode
+2022-03-18 11:43:59.688 [3047] main/135/applier/admin@localhost:3302 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-18 11:43:59.688 [3047] main/134/applier/admin@localhost:3303 I> can't connect to master
+2022-03-18 11:43:59.688 [3047] main/134/applier/admin@localhost:3303 coio.cc:359 !> SystemError unexpected EOF when reading from socket, called on fd 21, aka 127.0.0.1:47098, peer of 127.0.0.1:3303: Broken pipe
+2022-03-18 11:43:59.688 [3047] main/134/applier/admin@localhost:3303 I> will retry every 1.00 second
+2022-03-18 11:43:59.692 [3047] main/115/remote_control/127.0.0.1:52074 I> Upgrade vshard schema to {0.1.16.0}
+2022-03-18 11:43:59.692 [3047] main/115/remote_control/127.0.0.1:52074 I> Insert 'vshard_version' into _schema
+2022-03-18 11:43:59.693 [3047] main/115/remote_control/127.0.0.1:52074 I> Create function vshard.storage._call()
+2022-03-18 11:43:59.693 [3047] main/115/remote_control/127.0.0.1:52074 I> Successful vshard schema upgrade to {0.1.16.0}
+2022-03-18 11:43:59.694 [3047] main/136/lua I> gc_bucket_f has been started
+2022-03-18 11:43:59.696 [3047] main/137/lua I> recovery_f has been started
+2022-03-18 11:43:59.696 [3047] main/115/remote_control/127.0.0.1:52074 I> Took on replicaset master role
+2022-03-18 11:43:59.702 [3047] main/115/remote_control/127.0.0.1:52074 I> Roles configuration finished
+2022-03-18 11:43:59.702 [3047] main/115/remote_control/127.0.0.1:52074 I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-18 11:43:59.705 [3047] main/110/remote_control/127.0.0.1:52074 utils.c:449 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
+2022-03-18 11:44:00.654 [3047] main/122/main I> joining replica db7a6960-fab8-4aae-b98d-8137f4ab56cb at fd 21, aka 127.0.0.1:3302, peer of 127.0.0.1:52122
+2022-03-18 11:44:00.661 [3047] main/122/main I> initial data sent.
+2022-03-18 11:44:00.662 [3047] main/122/main I> assigned id 2 to replica db7a6960-fab8-4aae-b98d-8137f4ab56cb
+2022-03-18 11:44:00.664 [3047] relay/127.0.0.1:52122/101/main I> recover from `/tmp/data/test-cluster.s1-master/00000000000000000000.xlog'
+2022-03-18 11:44:00.665 [3047] main/122/main I> final data sent.
+2022-03-18 11:44:00.703 [3047] main/122/main I> subscribed replica db7a6960-fab8-4aae-b98d-8137f4ab56cb at fd 21, aka 127.0.0.1:3302, peer of 127.0.0.1:52122
+2022-03-18 11:44:00.703 [3047] main/122/main I> remote vclock {1: 44} local vclock {1: 44}
+2022-03-18 11:44:00.704 [3047] relay/127.0.0.1:52122/101/main I> recover from `/tmp/data/test-cluster.s1-master/00000000000000000000.xlog'
+2022-03-18 11:44:00.772 [3047] main/138/main I> Backup of active config created: "/tmp/data/test-cluster.s1-master/config.backup"
+2022-03-18 11:44:00.773 [3047] main/138/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-18 11:44:00.773 [3047] main/138/main I> Failover disabled
+2022-03-18 11:44:00.775 [3047] main/138/main I> Roles configuration finished
+2022-03-18 11:44:00.775 [3047] main/138/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-18 11:44:00.866 [3047] main/138/main I> Backup of active config created: "/tmp/data/test-cluster.s1-master/config.backup"
+2022-03-18 11:44:00.867 [3047] main/138/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-18 11:44:00.867 [3047] main/138/main I> Failover disabled
+2022-03-18 11:44:00.868 [3047] main/138/main I> Roles configuration finished
+2022-03-18 11:44:00.868 [3047] main/138/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-18 11:44:01.691 [3047] main/134/applier/admin@localhost:3303 I> remote master db7a6960-fab8-4aae-b98d-8137f4ab56cb at 127.0.0.1:3303 running Tarantool 2.8.3
+2022-03-18 11:44:01.692 [3047] main/134/applier/admin@localhost:3303 I> authenticated
+2022-03-18 11:44:01.693 [3047] main/134/applier/admin@localhost:3303 I> subscribed
+2022-03-18 11:44:01.694 [3047] main/134/applier/admin@localhost:3303 I> remote vclock {1: 15044} local vclock {1: 15044}
+2022-03-18 11:44:01.695 [3047] main/134/applier/admin@localhost:3303 I> RAFT: message {term: 1, state: follower} from 2
+2022-03-18 11:44:01.702 [3047] main/140/applierw/admin@localhost:3303 C> leaving orphan mode
+2022-03-18 11:44:01.703 [3047] main/140/applierw/admin@localhost:3303 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-18 11:44:10.945 [3047] main/139/main I> Backup of active config created: "/tmp/data/test-cluster.s1-master/config.backup"
+2022-03-18 11:44:10.945 [3047] main/139/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-18 11:44:10.946 [3047] main/139/main I> Failover disabled
+2022-03-18 11:44:10.947 [3047] main/139/main I> Roles configuration finished
+2022-03-18 11:44:10.947 [3047] main/139/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-18 11:44:11.005 [3047] main C> got signal 15 - Terminated
+2022-03-18 11:44:11.005 [3047] main/142/trigger_fiber0 I> Starting reconfiguration of replica f5d4dee8-b23b-469c-82de-4facf05b91da
+2022-03-18 11:44:11.006 [3047] main/142/trigger_fiber0 I> Resigning from the replicaset master role...
+2022-03-18 11:44:11.006 [3047] main/142/trigger_fiber0 I> Box has been configured
+2022-03-18 11:44:11.007 [3047] main/143/lua I> Old replicaset and replica objects are outdated.
+2022-03-18 11:44:11.007 [3047] main/142/trigger_fiber0 I> GC stopped
+2022-03-18 11:44:11.007 [3047] main/142/trigger_fiber0 I> Recovery stopped
+2022-03-18 11:44:11.008 [3047] main/142/trigger_fiber0 I> Resigned from the replicaset master role
+2022-03-18 11:44:11.027 [3047] main I> tx_binary: stopped
