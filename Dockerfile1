@@ -1,0 +1,29 @@
+FROM centos:7
+# tarantool process runs under root - it is required to allow copying files instead of bind
+#ARG TARANTOOL_SERVER_USER="tarantool"
+#ARG TARANTOOL_SERVER_UID=1000
+#ARG TARANTOOL_SERVER_GROUP="tarantool"
+#ARG TARANTOOL_SERVER_GID=1000
+ARG TARANTOOL_WORKDIR="/app"
+ARG TARANTOOL_RUNDIR="/tmp/run"
+ARG TARANTOOL_DATADIR="/tmp/data"
+ENV TARANTOOL_WORKDIR=$TARANTOOL_WORKDIR
+ENV TARANTOOL_RUNDIR=$TARANTOOL_RUNDIR
+ENV TARANTOOL_DATADIR=$TARANTOOL_DATADIR
+
+RUN yum -y install cmake make gcc git unzip && yum clean all
+ARG SDK_TGZ="tarantool-enterprise-bundle-2.7.3-0-gdddf926c3-r427.tar.gz"
+ENV SDK_TGT_DIR="/sdk"
+
+COPY $SDK_TGZ /tmp/
+RUN mkdir ./tmp_sdk && tar -xf /tmp/$SDK_TGZ -C ./tmp_sdk && \
+    mv ./tmp_sdk/tarantool-enterprise $SDK_TGT_DIR && rm /tmp/$SDK_TGZ
+
+#RUN groupadd -g $TARANTOOL_SERVER_GID $TARANTOOL_SERVER_GROUP && \
+#    useradd -u $TARANTOOL_SERVER_UID -g $TARANTOOL_SERVER_GID -m -s /bin/bash $TARANTOOL_SERVER_USER \
+#    || true
+#
+#USER $TARANTOOL_SERVER_USER:$TARANTOOL_SERVER_GROUP
+WORKDIR $TARANTOOL_WORKDIR
+
+CMD PATH=$SDK_TGT_DIR:$PATH && cartridge build && cartridge start --run-dir=$TARANTOOL_RUNDIR --data-dir=$TARANTOOL_DATADIR
