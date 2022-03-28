@@ -1,227 +1,182 @@
-2022-03-18 11:43:49.098 [3052] main/103/init.lua I> Using advertise_uri "localhost:3301"
-2022-03-18 11:43:49.099 [3052] main/103/init.lua I> Membership encryption enabled
-2022-03-18 11:43:49.101 [3052] main/103/init.lua I> Probe uri was successful
-2022-03-18 11:43:49.102 [3052] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3302
-2022-03-18 11:43:49.102 [3052] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3302
-2022-03-18 11:43:49.103 [3052] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
-2022-03-18 11:43:49.103 [3052] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3301
-2022-03-18 11:43:49.105 [3052] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3300
-2022-03-18 11:43:49.105 [3052] main/103/init.lua I> Membership BROADCAST sent to 192.168.239.255:3300
-2022-03-18 11:43:49.111 [3052] main/107/http/0.0.0.0:8081 I> started
-2022-03-18 11:43:49.112 [3052] main/103/init.lua I> Listening HTTP on 0.0.0.0:8081
-2022-03-18 11:43:49.113 [3052] main/108/console/unix/:/tmp/run/test-cluster.router.control I> started
-2022-03-18 11:43:49.467 [3052] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
-2022-03-18 11:43:49.502 [3052] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
-2022-03-18 11:43:49.544 [3052] main/109/remote_control/0.0.0.0:3301 I> started
-2022-03-18 11:43:49.544 [3052] main/103/init.lua I> Remote control bound to 0.0.0.0:3301
-2022-03-18 11:43:49.545 [3052] main/103/init.lua I> Remote control ready to accept connections
-2022-03-18 11:43:49.545 [3052] main/103/init.lua I> Instance state changed:  -> Unconfigured
-2022-03-18 11:43:49.546 [3052] main/103/init.lua I> Cartridge 2.7.3
-2022-03-18 11:43:49.546 [3052] main/103/init.lua I> server alias router
-2022-03-18 11:43:49.546 [3052] main/103/init.lua I> advertise uri localhost:3301
-2022-03-18 11:43:49.546 [3052] main/103/init.lua I> working directory /tmp/data/test-cluster.router
-2022-03-18 11:43:49.547 [3052] main C> entering the event loop
-2022-03-18 11:43:56.793 [3052] main/111/remote_control/192.168.224.1:43282 remote-control.lua:336 E> RemoteControlError: /app/.rocks/share/tarantool/cartridge/remote-control.lua:183: attempt to index local 'header' (a number value)
-stack traceback:
-	[C]: in function 'xpcall'
-	/app/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	/app/.rocks/share/tarantool/cartridge/remote-control.lua:334: in function </app/.rocks/share/tarantool/cartridge/remote-control.lua:292>
-	[C]: in function 'pcall'
-	builtin/socket.lua:1081: in function <builtin/socket.lua:1079>
-2022-03-18 11:43:57.844 [3052] main/110/remote_control/192.168.224.1:43270 remote-control.lua:336 E> RemoteControlError: /app/.rocks/share/tarantool/cartridge/remote-control.lua:183: attempt to index local 'header' (a number value)
-stack traceback:
-	[C]: in function 'xpcall'
-	/app/.rocks/share/tarantool/errors.lua:145: in function 'pcall'
-	/app/.rocks/share/tarantool/cartridge/remote-control.lua:334: in function </app/.rocks/share/tarantool/cartridge/remote-control.lua:292>
-	[C]: in function 'pcall'
-	builtin/socket.lua:1081: in function <builtin/socket.lua:1079>
-2022-03-18 11:43:59.589 [3052] main/115/console/unix/: twophase.lua:497 W> Updating config clusterwide...
-2022-03-18 11:43:59.590 [3052] main/115/console/unix/: twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
-2022-03-18 11:43:59.600 [3052] main/115/console/unix/: twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
-2022-03-18 11:43:59.605 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
-2022-03-18 11:43:59.605 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
-2022-03-18 11:43:59.606 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
-2022-03-18 11:43:59.606 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
-2022-03-18 11:43:59.606 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
-2022-03-18 11:43:59.606 [3052] main/115/console/unix/: twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
-2022-03-18 11:43:59.607 [3052] main/131/remote_control/127.0.0.1:43306 I> Instance state changed: Unconfigured -> BootstrappingBox
-2022-03-18 11:43:59.608 [3052] main/131/remote_control/127.0.0.1:43306 confapplier.lua:460 W> Calling box.cfg()...
-2022-03-18 11:43:59.614 [3052] main/131/remote_control/127.0.0.1:43306 C> Tarantool 2.8.3-65-gb34edbf
-2022-03-18 11:43:59.614 [3052] main/131/remote_control/127.0.0.1:43306 C> log level 5
-2022-03-18 11:43:59.615 [3052] main/131/remote_control/127.0.0.1:43306 I> wal/engine cleanup is paused
-2022-03-18 11:43:59.615 [3052] main/131/remote_control/127.0.0.1:43306 I> mapping 268435456 bytes for memtx tuple arena...
-2022-03-18 11:43:59.616 [3052] main/131/remote_control/127.0.0.1:43306 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
-2022-03-18 11:43:59.616 [3052] main/131/remote_control/127.0.0.1:43306 I> mapping 134217728 bytes for vinyl tuple arena...
-2022-03-18 11:43:59.623 [3052] main/131/remote_control/127.0.0.1:43306 systemd.c:132 !> systemd: failed to send message: Connection refused
-2022-03-18 11:43:59.624 [3052] main/131/remote_control/127.0.0.1:43306 I> instance uuid 2d902871-ab2e-4cf2-a8d0-8315a2ba266f
-2022-03-18 11:43:59.624 [3052] main/132/remote_control/127.0.0.1:43306 I> Cartridge 2.7.3
-2022-03-18 11:43:59.624 [3052] main/132/remote_control/127.0.0.1:43306 I> server alias router
-2022-03-18 11:43:59.625 [3052] main/132/remote_control/127.0.0.1:43306 I> advertise uri localhost:3301
-2022-03-18 11:43:59.625 [3052] main/132/remote_control/127.0.0.1:43306 I> working directory /tmp/data/test-cluster.router
-2022-03-18 11:43:59.625 [3052] main/131/remote_control/127.0.0.1:43306 I> tx_binary: stopped
-2022-03-18 11:43:59.626 [3052] main/131/remote_control/127.0.0.1:43306 I> initializing an empty data directory
-2022-03-18 11:43:59.645 [3052] main/131/remote_control/127.0.0.1:43306 I> assigned id 1 to replica 2d902871-ab2e-4cf2-a8d0-8315a2ba266f
-2022-03-18 11:43:59.645 [3052] main/131/remote_control/127.0.0.1:43306 I> cluster uuid cd5fbf59-7fd2-457f-a593-5077b5c29af7
-2022-03-18 11:43:59.648 [3052] snapshot/101/main I> saving snapshot `/tmp/data/test-cluster.router/00000000000000000000.snap.inprogress'
-2022-03-18 11:43:59.658 [3052] snapshot/101/main I> done
-2022-03-18 11:43:59.659 [3052] main/131/remote_control/127.0.0.1:43306 systemd.c:132 !> systemd: failed to send message: Connection refused
-2022-03-18 11:43:59.659 [3052] main/131/remote_control/127.0.0.1:43306 I> ready to accept requests
-2022-03-18 11:43:59.659 [3052] main/133/gc I> wal/engine cleanup is resumed
-2022-03-18 11:43:59.660 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'custom_proc_title' configuration option to "test-cluster@router"
-2022-03-18 11:43:59.660 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'log_level' configuration option to 5
-2022-03-18 11:43:59.661 [3052] main/134/checkpoint_daemon I> scheduled next checkpoint for Fri Mar 18 13:26:16 2022
-2022-03-18 11:43:59.668 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'instance_uuid' configuration option to "2d902871-ab2e-4cf2-a8d0-8315a2ba266f"
-2022-03-18 11:43:59.671 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'replication_connect_quorum' configuration option to 0
-2022-03-18 11:43:59.671 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'log_format' configuration option to "plain"
-2022-03-18 11:43:59.671 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'replicaset_uuid' configuration option to "cd5fbf59-7fd2-457f-a593-5077b5c29af7"
-2022-03-18 11:43:59.674 [3052] main/131/remote_control/127.0.0.1:43306 I> Making sure user "admin" exists...
-2022-03-18 11:43:59.674 [3052] main/131/remote_control/127.0.0.1:43306 I> Granting replication permissions to "admin"...
-2022-03-18 11:43:59.679 [3052] main/131/remote_control/127.0.0.1:43306 I> Setting password for user "admin" ...
-2022-03-18 11:43:59.679 [3052] main/131/remote_control/127.0.0.1:43306 I> Remote control stopped
-2022-03-18 11:43:59.680 [3052] main/109/remote_control/0.0.0.0:3301 I> stopped
-2022-03-18 11:43:59.680 [3052] main/131/remote_control/127.0.0.1:43306 I> tx_binary: stopped
-2022-03-18 11:43:59.680 [3052] main/131/remote_control/127.0.0.1:43306 I> tx_binary: bound to 0.0.0.0:3301
-2022-03-18 11:43:59.680 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'listen' configuration option to "3301"
-2022-03-18 11:43:59.681 [3052] main/131/remote_control/127.0.0.1:43306 I> dropping fd 16, aka 192.168.224.2:3301, peer 192.168.224.1:43294
-2022-03-18 11:43:59.681 [3052] main/131/remote_control/127.0.0.1:43306 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
-2022-03-18 11:43:59.682 [3052] main/131/remote_control/127.0.0.1:43306 I> connecting to 1 replicas
-2022-03-18 11:43:59.682 [3052] main/131/remote_control/127.0.0.1:43306 C> failed to connect to 1 out of 1 replicas
-2022-03-18 11:43:59.682 [3052] main/131/remote_control/127.0.0.1:43306 C> leaving orphan mode
-2022-03-18 11:43:59.683 [3052] main/131/remote_control/127.0.0.1:43306 systemd.c:132 !> systemd: failed to send message: Connection refused
-2022-03-18 11:43:59.683 [3052] main/131/remote_control/127.0.0.1:43306 I> set 'replication' configuration option to ["admin@localhost:3301"]
-2022-03-18 11:43:59.683 [3052] main/131/remote_control/127.0.0.1:43306 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
-2022-03-18 11:43:59.683 [3052] main/131/remote_control/127.0.0.1:43306 I> Instance state changed: BoxConfigured -> ConfiguringRoles
-2022-03-18 11:43:59.684 [3052] main/131/remote_control/127.0.0.1:43306 I> Failover disabled
-2022-03-18 11:43:59.684 [3052] main/131/remote_control/127.0.0.1:43306 I> Replicaset cd5fbf59-7fd2-457f-a593-5077b5c29af7 (me): new leader 2d902871-ab2e-4cf2-a8d0-8315a2ba266f (me), was nil
-2022-03-18 11:43:59.685 [3052] main/131/remote_control/127.0.0.1:43306 I> Replicaset 540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92: new leader f5d4dee8-b23b-469c-82de-4facf05b91da ("localhost:3302"), was nil
-2022-03-18 11:43:59.685 [3052] main/131/remote_control/127.0.0.1:43306 I> Replicaset bc468503-1665-4b5b-80ed-7b6dc9a186be: new leader 83a2ffbd-ff37-4c66-9ec1-d35fc9633bd2 ("localhost:3304"), was nil
-2022-03-18 11:43:59.685 [3052] main/131/remote_control/127.0.0.1:43306 I> Reconfiguring vshard-router/default ...
-2022-03-18 11:43:59.686 [3052] main/131/remote_control/127.0.0.1:43306 I> Starting router configuration
-2022-03-18 11:43:59.686 [3052] main/131/remote_control/127.0.0.1:43306 I> Calling box.cfg()...
-2022-03-18 11:43:59.686 [3052] main/131/remote_control/127.0.0.1:43306 I> {"read_only":false}
-2022-03-18 11:43:59.686 [3052] main/131/remote_control/127.0.0.1:43306 I> Box has been configured
-2022-03-18 11:43:59.690 [3052] main/148/applier/admin@localhost:3301 I> remote master 2d902871-ab2e-4cf2-a8d0-8315a2ba266f at 127.0.0.1:3301 running Tarantool 2.8.3
-2022-03-18 11:43:59.691 [3052] main/149/localhost:3304 (net.box) I> connected to localhost:3304
-2022-03-18 11:43:59.691 [3052] main/148/applier/admin@localhost:3301 C> leaving orphan mode
-2022-03-18 11:43:59.692 [3052] main/148/applier/admin@localhost:3301 systemd.c:132 !> systemd: failed to send message: Connection refused
-2022-03-18 11:43:59.692 [3052] main/150/localhost:3305 (net.box) I> connected to localhost:3305
-2022-03-18 11:43:59.692 [3052] main/152/localhost:3303 (net.box) I> connected to localhost:3303
-2022-03-18 11:43:59.694 [3052] main/151/localhost:3302 (net.box) I> connected to localhost:3302
-2022-03-18 11:43:59.694 [3052] main/153/lua I> failover_f has been started
-2022-03-18 11:43:59.695 [3052] main/153/lua I> New replica localhost:3304(admin@localhost:3304) for replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304))
-2022-03-18 11:43:59.695 [3052] main/153/lua I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302))
-2022-03-18 11:43:59.695 [3052] main/153/lua I> All replicas are ok
-2022-03-18 11:43:59.695 [3052] main/153/lua I> Failovering step is finished. Schedule next after 1.000000 seconds
-2022-03-18 11:43:59.696 [3052] main/154/lua I> discovery_f has been started
-2022-03-18 11:43:59.699 [3052] main/131/remote_control/127.0.0.1:43306 I> Roles configuration finished
-2022-03-18 11:43:59.699 [3052] main/131/remote_control/127.0.0.1:43306 I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2022-03-18 11:43:59.700 [3052] main/126/remote_control/127.0.0.1:43306 utils.c:449 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
-2022-03-18 11:43:59.713 [3052] main/154/vshard.discovery._static_router I> Start aggressive discovery, 30000 buckets are unknown. Discovery works with 1 seconds interval
-2022-03-18 11:44:00.693 [3052] main/153/vshard.failover._static_router I> All replicas are ok
-2022-03-18 11:44:00.731 [3052] main/150/localhost:3305 (net.box) I> disconnected from localhost:3305
-2022-03-18 11:44:00.731 [3052] main/150/localhost:3305 (net.box) net_box.lua:1020 W> localhost:3305: Peer closed
-2022-03-18 11:44:00.731 [3052] main/152/localhost:3303 (net.box) I> disconnected from localhost:3303
-2022-03-18 11:44:00.732 [3052] main/152/localhost:3303 (net.box) net_box.lua:1020 W> localhost:3303: Peer closed
-2022-03-18 11:44:00.748 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
-2022-03-18 11:44:00.748 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
-2022-03-18 11:44:00.748 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
-2022-03-18 11:44:00.748 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
-2022-03-18 11:44:00.749 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
-2022-03-18 11:44:00.749 [3052] main/115/console/unix/: twophase.lua:573 W> Clusterwide config updated successfully
-2022-03-18 11:44:00.752 [3052] main/115/console/unix/: twophase.lua:497 W> Updating config clusterwide...
-2022-03-18 11:44:00.754 [3052] main/115/console/unix/: twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
-2022-03-18 11:44:00.765 [3052] main/115/console/unix/: twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
-2022-03-18 11:44:00.770 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
-2022-03-18 11:44:00.770 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
-2022-03-18 11:44:00.771 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
-2022-03-18 11:44:00.771 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
-2022-03-18 11:44:00.771 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
-2022-03-18 11:44:00.771 [3052] main/115/console/unix/: twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
-2022-03-18 11:44:00.772 [3052] main/138/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
-2022-03-18 11:44:00.773 [3052] main/138/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2022-03-18 11:44:00.773 [3052] main/138/main I> Failover disabled
-2022-03-18 11:44:00.774 [3052] main/138/main I> Roles configuration finished
-2022-03-18 11:44:00.774 [3052] main/138/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2022-03-18 11:44:00.775 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
-2022-03-18 11:44:00.776 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
-2022-03-18 11:44:00.776 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
-2022-03-18 11:44:00.776 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
-2022-03-18 11:44:00.776 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
-2022-03-18 11:44:00.776 [3052] main/115/console/unix/: twophase.lua:573 W> Clusterwide config updated successfully
-2022-03-18 11:44:00.784 [3052] main/115/console/unix/: I> Bootstrapping vshard-router/default ...
-2022-03-18 11:44:00.814 [3052] main/115/console/unix/: I> Buckets from 1 to 15000 are bootstrapped on "bc468503-1665-4b5b-80ed-7b6dc9a186be"
-2022-03-18 11:44:00.845 [3052] main/115/console/unix/: I> Buckets from 15001 to 30000 are bootstrapped on "540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92"
-2022-03-18 11:44:00.846 [3052] main/115/console/unix/: twophase.lua:497 W> Updating config clusterwide...
-2022-03-18 11:44:00.846 [3052] main/115/console/unix/: twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
-2022-03-18 11:44:00.858 [3052] main/115/console/unix/: twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
-2022-03-18 11:44:00.863 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
-2022-03-18 11:44:00.863 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
-2022-03-18 11:44:00.863 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
-2022-03-18 11:44:00.864 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
-2022-03-18 11:44:00.864 [3052] main/115/console/unix/: twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
-2022-03-18 11:44:00.864 [3052] main/115/console/unix/: twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
-2022-03-18 11:44:00.866 [3052] main/138/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
-2022-03-18 11:44:00.867 [3052] main/138/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2022-03-18 11:44:00.867 [3052] main/138/main I> Failover disabled
-2022-03-18 11:44:00.868 [3052] main/138/main I> Roles configuration finished
-2022-03-18 11:44:00.868 [3052] main/138/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2022-03-18 11:44:00.869 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
-2022-03-18 11:44:00.869 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
-2022-03-18 11:44:00.870 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
-2022-03-18 11:44:00.870 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
-2022-03-18 11:44:00.870 [3052] main/115/console/unix/: twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
-2022-03-18 11:44:00.870 [3052] main/115/console/unix/: twophase.lua:573 W> Clusterwide config updated successfully
-2022-03-18 11:44:01.237 [3052] main/150/localhost:3305 (net.box) I> connected to localhost:3305
-2022-03-18 11:44:01.238 [3052] main/152/localhost:3303 (net.box) I> connected to localhost:3303
-2022-03-18 11:44:01.756 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 0, became 1000
-2022-03-18 11:44:01.757 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 0, became 1000
-2022-03-18 11:44:02.779 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 1000, became 2000
-2022-03-18 11:44:02.780 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 1000, became 2000
-2022-03-18 11:44:03.801 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 2000, became 3000
-2022-03-18 11:44:03.802 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 2000, became 3000
-2022-03-18 11:44:04.823 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 3000, became 4000
-2022-03-18 11:44:04.823 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 3000, became 4000
-2022-03-18 11:44:05.845 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 4000, became 5000
-2022-03-18 11:44:05.846 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 4000, became 5000
-2022-03-18 11:44:06.869 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 5000, became 6000
-2022-03-18 11:44:06.869 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 5000, became 6000
-2022-03-18 11:44:07.891 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 6000, became 7000
-2022-03-18 11:44:07.892 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 6000, became 7000
-2022-03-18 11:44:08.914 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 7000, became 8000
-2022-03-18 11:44:08.914 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 7000, became 8000
-2022-03-18 11:44:09.936 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 8000, became 9000
-2022-03-18 11:44:09.937 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 8000, became 9000
-2022-03-18 11:44:10.919 [3052] main/167/http/127.0.0.1:35372 I> Migrations to be applied: ["01_session_context.lua","2_grants.lua"]
-2022-03-18 11:44:10.919 [3052] main/167/http/127.0.0.1:35372 I> Preparing to run migrations on localhost:3302
-2022-03-18 11:44:10.920 [3052] main/167/http/127.0.0.1:35372 I> Preparing to run migrations on localhost:3304
-2022-03-18 11:44:10.920 [3052] main/167/http/127.0.0.1:35372 I> Preparing to run migrations on localhost:3301
-2022-03-18 11:44:10.932 [3052] main/167/http/127.0.0.1:35372 I> Migrations applied on all storages, changing clusterwide configuration...
-2022-03-18 11:44:10.933 [3052] main/167/http/127.0.0.1:35372 twophase.lua:497 W> Updating config clusterwide...
-2022-03-18 11:44:10.934 [3052] main/167/http/127.0.0.1:35372 twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
-2022-03-18 11:44:10.938 [3052] main/167/http/127.0.0.1:35372 twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
-2022-03-18 11:44:10.943 [3052] main/167/http/127.0.0.1:35372 twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
-2022-03-18 11:44:10.945 [3052] main/171/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
-2022-03-18 11:44:10.946 [3052] main/171/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
-2022-03-18 11:44:10.946 [3052] main/171/main I> Failover disabled
-2022-03-18 11:44:10.947 [3052] main/171/main I> Roles configuration finished
-2022-03-18 11:44:10.947 [3052] main/171/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
-2022-03-18 11:44:10.948 [3052] main/167/http/127.0.0.1:35372 twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
-2022-03-18 11:44:10.948 [3052] main/167/http/127.0.0.1:35372 twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
-2022-03-18 11:44:10.948 [3052] main/167/http/127.0.0.1:35372 twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
-2022-03-18 11:44:10.948 [3052] main/167/http/127.0.0.1:35372 twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
-2022-03-18 11:44:10.949 [3052] main/167/http/127.0.0.1:35372 twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
-2022-03-18 11:44:10.949 [3052] main/167/http/127.0.0.1:35372 twophase.lua:573 W> Clusterwide config updated successfully
-2022-03-18 11:44:10.949 [3052] main/167/http/127.0.0.1:35372 I> Migrations applied successfully!
-2022-03-18 11:44:10.958 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="540ea3f7-b99d-4e03-88fd-3e0fbf2a8c92", master=localhost:3302(admin@localhost:3302)) buckets: was 9000, became 10000
-2022-03-18 11:44:10.959 [3052] main/154/vshard.discovery._static_router I> Updated replicaset(uuid="bc468503-1665-4b5b-80ed-7b6dc9a186be", master=localhost:3304(admin@localhost:3304)) buckets: was 9000, became 10000
-2022-03-18 11:44:11.004 [3052] main C> got signal 15 - Terminated
-2022-03-18 11:44:11.005 [3052] main/172/trigger_fiber0 I> Starting router configuration
-2022-03-18 11:44:11.006 [3052] main/172/trigger_fiber0 I> Calling box.cfg()...
-2022-03-18 11:44:11.007 [3052] main/172/trigger_fiber0 I> Box has been configured
-2022-03-18 11:44:11.007 [3052] main/174/lua I> Old replicaset and replica objects are outdated.
-2022-03-18 11:44:11.018 [3052] main I> tx_binary: stopped
+2022-03-28 07:41:23.527 [247] main/103/init.lua I> Using advertise_uri "localhost:3301"
+2022-03-28 07:41:23.529 [247] main/103/init.lua I> Membership encryption enabled
+2022-03-28 07:41:23.532 [247] main/103/init.lua I> Probe uri was successful
+2022-03-28 07:41:23.533 [247] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3302
+2022-03-28 07:41:23.533 [247] main/103/init.lua I> Membership BROADCAST sent to 172.27.255.255:3302
+2022-03-28 07:41:23.534 [247] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3301
+2022-03-28 07:41:23.535 [247] main/103/init.lua I> Membership BROADCAST sent to 172.27.255.255:3301
+2022-03-28 07:41:23.536 [247] main/103/init.lua I> Membership BROADCAST sent to 127.0.0.1:3300
+2022-03-28 07:41:23.536 [247] main/103/init.lua I> Membership BROADCAST sent to 172.27.255.255:3300
+2022-03-28 07:41:23.551 [247] main/107/http/0.0.0.0:8081 I> started
+2022-03-28 07:41:23.552 [247] main/103/init.lua I> Listening HTTP on 0.0.0.0:8081
+2022-03-28 07:41:23.553 [247] main/108/console/unix/:/tmp/run/test-cluster.router.control I> started
+2022-03-28 07:41:24.044 [247] main/103/init.lua I> "tuple.keydef" module is not found. Built-in "key_def" is used
+2022-03-28 07:41:24.096 [247] main/103/init.lua I> "tuple.merger" module is not found. Built-in "merger" is used
+2022-03-28 07:41:24.167 [247] main/109/remote_control/0.0.0.0:3301 I> started
+2022-03-28 07:41:24.167 [247] main/103/init.lua I> Remote control bound to 0.0.0.0:3301
+2022-03-28 07:41:24.169 [247] main/103/init.lua I> Remote control ready to accept connections
+2022-03-28 07:41:24.169 [247] main/103/init.lua I> Instance state changed:  -> Unconfigured
+2022-03-28 07:41:24.171 [247] main/103/init.lua I> Cartridge 2.7.3
+2022-03-28 07:41:24.171 [247] main/103/init.lua I> server alias router
+2022-03-28 07:41:24.171 [247] main/103/init.lua I> advertise uri localhost:3301
+2022-03-28 07:41:24.172 [247] main/103/init.lua I> working directory /tmp/data/test-cluster.router
+2022-03-28 07:41:24.174 [247] main C> entering the event loop
+2022-03-28 07:41:34.271 [247] main/115/remote_control/127.0.0.1:57582 I> Instance state changed: Unconfigured -> BootstrappingBox
+2022-03-28 07:41:34.272 [247] main/115/remote_control/127.0.0.1:57582 confapplier.lua:460 W> Calling box.cfg()...
+2022-03-28 07:41:34.276 [247] main/115/remote_control/127.0.0.1:57582 C> Tarantool 2.8.3-83-ga3658df
+2022-03-28 07:41:34.276 [247] main/115/remote_control/127.0.0.1:57582 C> log level 5
+2022-03-28 07:41:34.277 [247] main/115/remote_control/127.0.0.1:57582 I> wal/engine cleanup is paused
+2022-03-28 07:41:34.283 [247] main/115/remote_control/127.0.0.1:57582 I> mapping 268435456 bytes for memtx tuple arena...
+2022-03-28 07:41:34.284 [247] main/115/remote_control/127.0.0.1:57582 I> Actual slab_alloc_factor calculated on the basis of desired slab_alloc_factor = 1.044274
+2022-03-28 07:41:34.284 [247] main/115/remote_control/127.0.0.1:57582 I> mapping 134217728 bytes for vinyl tuple arena...
+2022-03-28 07:41:34.305 [247] main/115/remote_control/127.0.0.1:57582 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-28 07:41:34.305 [247] main/115/remote_control/127.0.0.1:57582 I> instance uuid 7151d922-1035-49c3-8da8-e99c8406223c
+2022-03-28 07:41:34.307 [247] main/116/remote_control/127.0.0.1:57582 I> Cartridge 2.7.3
+2022-03-28 07:41:34.311 [247] main/116/remote_control/127.0.0.1:57582 I> server alias router
+2022-03-28 07:41:34.311 [247] main/116/remote_control/127.0.0.1:57582 I> advertise uri localhost:3301
+2022-03-28 07:41:34.314 [247] main/116/remote_control/127.0.0.1:57582 I> working directory /tmp/data/test-cluster.router
+2022-03-28 07:41:34.316 [247] main/115/remote_control/127.0.0.1:57582 I> tx_binary: stopped
+2022-03-28 07:41:34.319 [247] main/115/remote_control/127.0.0.1:57582 I> initializing an empty data directory
+2022-03-28 07:41:34.352 [247] main/115/remote_control/127.0.0.1:57582 I> assigned id 1 to replica 7151d922-1035-49c3-8da8-e99c8406223c
+2022-03-28 07:41:34.352 [247] main/115/remote_control/127.0.0.1:57582 I> cluster uuid dca7d0e4-2d29-4f00-ad2f-b15461f9273b
+2022-03-28 07:41:34.358 [247] snapshot/101/main I> saving snapshot `/tmp/data/test-cluster.router/00000000000000000000.snap.inprogress'
+2022-03-28 07:41:34.362 [247] snapshot/101/main I> done
+2022-03-28 07:41:34.363 [247] main/115/remote_control/127.0.0.1:57582 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-28 07:41:34.363 [247] main/115/remote_control/127.0.0.1:57582 I> ready to accept requests
+2022-03-28 07:41:34.363 [247] main/117/gc I> wal/engine cleanup is resumed
+2022-03-28 07:41:34.364 [247] main/115/remote_control/127.0.0.1:57582 I> set 'custom_proc_title' configuration option to "test-cluster@router"
+2022-03-28 07:41:34.364 [247] main/115/remote_control/127.0.0.1:57582 I> set 'log_level' configuration option to 5
+2022-03-28 07:41:34.364 [247] main/118/checkpoint_daemon I> scheduled next checkpoint for Mon Mar 28 09:17:29 2022
+2022-03-28 07:41:34.374 [247] main/115/remote_control/127.0.0.1:57582 I> set 'instance_uuid' configuration option to "7151d922-1035-49c3-8da8-e99c8406223c"
+2022-03-28 07:41:34.378 [247] main/115/remote_control/127.0.0.1:57582 I> set 'replication_connect_quorum' configuration option to 0
+2022-03-28 07:41:34.379 [247] main/115/remote_control/127.0.0.1:57582 I> set 'log_format' configuration option to "plain"
+2022-03-28 07:41:34.379 [247] main/115/remote_control/127.0.0.1:57582 I> set 'replicaset_uuid' configuration option to "dca7d0e4-2d29-4f00-ad2f-b15461f9273b"
+2022-03-28 07:41:34.382 [247] main/115/remote_control/127.0.0.1:57582 I> Making sure user "admin" exists...
+2022-03-28 07:41:34.382 [247] main/115/remote_control/127.0.0.1:57582 I> Granting replication permissions to "admin"...
+2022-03-28 07:41:34.389 [247] main/115/remote_control/127.0.0.1:57582 I> Setting password for user "admin" ...
+2022-03-28 07:41:34.390 [247] main/115/remote_control/127.0.0.1:57582 I> Remote control stopped
+2022-03-28 07:41:34.391 [247] main/109/remote_control/0.0.0.0:3301 I> stopped
+2022-03-28 07:41:34.391 [247] main/115/remote_control/127.0.0.1:57582 I> tx_binary: stopped
+2022-03-28 07:41:34.391 [247] main/115/remote_control/127.0.0.1:57582 I> tx_binary: bound to 0.0.0.0:3301
+2022-03-28 07:41:34.392 [247] main/115/remote_control/127.0.0.1:57582 I> set 'listen' configuration option to "3301"
+2022-03-28 07:41:34.392 [247] main/115/remote_control/127.0.0.1:57582 I> Instance state changed: BootstrappingBox -> ConnectingFullmesh
+2022-03-28 07:41:34.393 [247] main/115/remote_control/127.0.0.1:57582 I> connecting to 1 replicas
+2022-03-28 07:41:34.393 [247] main/115/remote_control/127.0.0.1:57582 C> failed to connect to 1 out of 1 replicas
+2022-03-28 07:41:34.393 [247] main/115/remote_control/127.0.0.1:57582 C> leaving orphan mode
+2022-03-28 07:41:34.393 [247] main/115/remote_control/127.0.0.1:57582 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-28 07:41:34.394 [247] main/115/remote_control/127.0.0.1:57582 I> set 'replication' configuration option to ["admin@localhost:3301"]
+2022-03-28 07:41:34.394 [247] main/115/remote_control/127.0.0.1:57582 I> Instance state changed: ConnectingFullmesh -> BoxConfigured
+2022-03-28 07:41:34.394 [247] main/115/remote_control/127.0.0.1:57582 I> Instance state changed: BoxConfigured -> ConfiguringRoles
+2022-03-28 07:41:34.394 [247] main/115/remote_control/127.0.0.1:57582 I> Failover disabled
+2022-03-28 07:41:34.395 [247] main/115/remote_control/127.0.0.1:57582 I> Replicaset dca7d0e4-2d29-4f00-ad2f-b15461f9273b (me): new leader 7151d922-1035-49c3-8da8-e99c8406223c (me), was nil
+2022-03-28 07:41:34.395 [247] main/115/remote_control/127.0.0.1:57582 I> Replicaset f9ac02c4-497c-40d4-890d-3b868c37caa1: new leader 61aa4e22-fd63-43d2-bc56-ea84f3d76cd2 ("localhost:3302"), was nil
+2022-03-28 07:41:34.395 [247] main/115/remote_control/127.0.0.1:57582 I> Replicaset eef0556e-a2b9-4edd-bb31-2506e2ddde0f: new leader d7f4147f-0621-4967-b232-d44d72d59dde ("localhost:3304"), was nil
+2022-03-28 07:41:34.396 [247] main/115/remote_control/127.0.0.1:57582 I> Reconfiguring vshard-router/default ...
+2022-03-28 07:41:34.396 [247] main/115/remote_control/127.0.0.1:57582 I> Starting router configuration
+2022-03-28 07:41:34.396 [247] main/115/remote_control/127.0.0.1:57582 I> Calling box.cfg()...
+2022-03-28 07:41:34.396 [247] main/115/remote_control/127.0.0.1:57582 I> {"read_only":false}
+2022-03-28 07:41:34.397 [247] main/115/remote_control/127.0.0.1:57582 I> Box has been configured
+2022-03-28 07:41:34.400 [247] main/132/applier/admin@localhost:3301 I> remote master 7151d922-1035-49c3-8da8-e99c8406223c at 127.0.0.1:3301 running Tarantool 2.8.3
+2022-03-28 07:41:34.400 [247] main/132/applier/admin@localhost:3301 C> leaving orphan mode
+2022-03-28 07:41:34.401 [247] main/132/applier/admin@localhost:3301 systemd.c:132 !> systemd: failed to send message: Connection refused
+2022-03-28 07:41:34.401 [247] main/134/localhost:3303 (net.box) I> connected to localhost:3303
+2022-03-28 07:41:34.401 [247] main/135/localhost:3305 (net.box) I> connected to localhost:3305
+2022-03-28 07:41:34.406 [247] main/136/localhost:3304 (net.box) I> connected to localhost:3304
+2022-03-28 07:41:34.411 [247] main/133/localhost:3302 (net.box) I> connected to localhost:3302
+2022-03-28 07:41:34.411 [247] main/137/lua I> failover_f has been started
+2022-03-28 07:41:34.412 [247] main/137/lua I> New replica localhost:3302(admin@localhost:3302) for replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302))
+2022-03-28 07:41:34.412 [247] main/137/lua I> New replica localhost:3304(admin@localhost:3304) for replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304))
+2022-03-28 07:41:34.412 [247] main/137/lua I> All replicas are ok
+2022-03-28 07:41:34.412 [247] main/137/lua I> Failovering step is finished. Schedule next after 1.000000 seconds
+2022-03-28 07:41:34.412 [247] main/138/lua I> discovery_f has been started
+2022-03-28 07:41:34.416 [247] main/115/remote_control/127.0.0.1:57582 I> Roles configuration finished
+2022-03-28 07:41:34.416 [247] main/115/remote_control/127.0.0.1:57582 I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-28 07:41:34.418 [247] main/110/remote_control/127.0.0.1:57582 utils.c:449 E> LuajitError: builtin/socket.lua:88: attempt to use closed socket
+2022-03-28 07:41:34.431 [247] main/138/vshard.discovery._static_router I> Start aggressive discovery, 30000 buckets are unknown. Discovery works with 1 seconds interval
+2022-03-28 07:41:35.412 [247] main/137/vshard.failover._static_router I> All replicas are ok
+2022-03-28 07:41:35.420 [247] main/134/localhost:3303 (net.box) I> disconnected from localhost:3303
+2022-03-28 07:41:35.420 [247] main/134/localhost:3303 (net.box) net_box.lua:1020 W> localhost:3303: Peer closed
+2022-03-28 07:41:35.456 [247] main/135/localhost:3305 (net.box) I> disconnected from localhost:3305
+2022-03-28 07:41:35.456 [247] main/135/localhost:3305 (net.box) net_box.lua:1020 W> localhost:3305: Peer closed
+2022-03-28 07:41:35.499 [247] main/122/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
+2022-03-28 07:41:35.500 [247] main/122/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-28 07:41:35.500 [247] main/122/main I> Failover disabled
+2022-03-28 07:41:35.501 [247] main/122/main I> Roles configuration finished
+2022-03-28 07:41:35.502 [247] main/122/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-28 07:41:35.517 [247] main/122/main I> Bootstrapping vshard-router/default ...
+2022-03-28 07:41:35.556 [247] main/122/main I> Buckets from 1 to 15000 are bootstrapped on "f9ac02c4-497c-40d4-890d-3b868c37caa1"
+2022-03-28 07:41:35.590 [247] main/122/main I> Buckets from 15001 to 30000 are bootstrapped on "eef0556e-a2b9-4edd-bb31-2506e2ddde0f"
+2022-03-28 07:41:35.591 [247] main/122/main twophase.lua:497 W> Updating config clusterwide...
+2022-03-28 07:41:35.592 [247] main/122/main twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
+2022-03-28 07:41:35.605 [247] main/122/main twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
+2022-03-28 07:41:35.612 [247] main/122/main twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
+2022-03-28 07:41:35.612 [247] main/122/main twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
+2022-03-28 07:41:35.612 [247] main/122/main twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
+2022-03-28 07:41:35.613 [247] main/122/main twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
+2022-03-28 07:41:35.613 [247] main/122/main twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
+2022-03-28 07:41:35.613 [247] main/122/main twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
+2022-03-28 07:41:35.615 [247] main/151/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
+2022-03-28 07:41:35.616 [247] main/151/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-28 07:41:35.617 [247] main/151/main I> Failover disabled
+2022-03-28 07:41:35.617 [247] main/151/main I> Roles configuration finished
+2022-03-28 07:41:35.617 [247] main/151/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-28 07:41:35.619 [247] main/122/main twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
+2022-03-28 07:41:35.619 [247] main/122/main twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
+2022-03-28 07:41:35.619 [247] main/122/main twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
+2022-03-28 07:41:35.620 [247] main/122/main twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
+2022-03-28 07:41:35.620 [247] main/122/main twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
+2022-03-28 07:41:35.620 [247] main/122/main twophase.lua:573 W> Clusterwide config updated successfully
+2022-03-28 07:41:35.927 [247] main/134/localhost:3303 (net.box) I> connected to localhost:3303
+2022-03-28 07:41:35.963 [247] main/135/localhost:3305 (net.box) I> connected to localhost:3305
+2022-03-28 07:41:36.474 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 0, became 1000
+2022-03-28 07:41:36.475 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 0, became 1000
+2022-03-28 07:41:37.496 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 1000, became 2000
+2022-03-28 07:41:37.496 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 1000, became 2000
+2022-03-28 07:41:38.519 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 2000, became 3000
+2022-03-28 07:41:38.520 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 2000, became 3000
+2022-03-28 07:41:39.543 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 3000, became 4000
+2022-03-28 07:41:39.543 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 3000, became 4000
+2022-03-28 07:41:40.565 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 4000, became 5000
+2022-03-28 07:41:40.566 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 4000, became 5000
+2022-03-28 07:41:41.588 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 5000, became 6000
+2022-03-28 07:41:41.588 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 5000, became 6000
+2022-03-28 07:41:42.610 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 6000, became 7000
+2022-03-28 07:41:42.610 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 6000, became 7000
+2022-03-28 07:41:43.632 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 7000, became 8000
+2022-03-28 07:41:43.633 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 7000, became 8000
+2022-03-28 07:41:44.655 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 8000, became 9000
+2022-03-28 07:41:44.656 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 8000, became 9000
+2022-03-28 07:41:45.682 [247] main/154/http/127.0.0.1:49676 I> Migrations to be applied: ["01_session_context.lua","2_grants.lua"]
+2022-03-28 07:41:45.684 [247] main/154/http/127.0.0.1:49676 I> Preparing to run migrations on localhost:3301
+2022-03-28 07:41:45.684 [247] main/154/http/127.0.0.1:49676 I> Preparing to run migrations on localhost:3304
+2022-03-28 07:41:45.685 [247] main/154/http/127.0.0.1:49676 I> Preparing to run migrations on localhost:3302
+2022-03-28 07:41:45.701 [247] main/154/http/127.0.0.1:49676 I> Migrations applied on all storages, changing clusterwide configuration...
+2022-03-28 07:41:45.701 [247] main/154/http/127.0.0.1:49676 twophase.lua:497 W> Updating config clusterwide...
+2022-03-28 07:41:45.702 [247] main/154/http/127.0.0.1:49676 twophase.lua:373 W> (2PC) patch_clusterwide upload phase...
+2022-03-28 07:41:45.706 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="f9ac02c4-497c-40d4-890d-3b868c37caa1", master=localhost:3302(admin@localhost:3302)) buckets: was 9000, became 10000
+2022-03-28 07:41:45.706 [247] main/138/vshard.discovery._static_router I> Updated replicaset(uuid="eef0556e-a2b9-4edd-bb31-2506e2ddde0f", master=localhost:3304(admin@localhost:3304)) buckets: was 9000, became 10000
+2022-03-28 07:41:45.708 [247] main/154/http/127.0.0.1:49676 twophase.lua:386 W> (2PC) patch_clusterwide prepare phase...
+2022-03-28 07:41:45.713 [247] main/154/http/127.0.0.1:49676 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3301
+2022-03-28 07:41:45.713 [247] main/154/http/127.0.0.1:49676 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3302
+2022-03-28 07:41:45.714 [247] main/154/http/127.0.0.1:49676 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3303
+2022-03-28 07:41:45.714 [247] main/154/http/127.0.0.1:49676 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3304
+2022-03-28 07:41:45.714 [247] main/154/http/127.0.0.1:49676 twophase.lua:395 W> Prepared for patch_clusterwide at localhost:3305
+2022-03-28 07:41:45.714 [247] main/154/http/127.0.0.1:49676 twophase.lua:419 W> (2PC) patch_clusterwide commit phase...
+2022-03-28 07:41:45.716 [247] main/158/main I> Backup of active config created: "/tmp/data/test-cluster.router/config.backup"
+2022-03-28 07:41:45.716 [247] main/158/main I> Instance state changed: RolesConfigured -> ConfiguringRoles
+2022-03-28 07:41:45.717 [247] main/158/main I> Failover disabled
+2022-03-28 07:41:45.718 [247] main/158/main I> Roles configuration finished
+2022-03-28 07:41:45.718 [247] main/158/main I> Instance state changed: ConfiguringRoles -> RolesConfigured
+2022-03-28 07:41:45.720 [247] main/154/http/127.0.0.1:49676 twophase.lua:428 W> Committed patch_clusterwide at localhost:3301
+2022-03-28 07:41:45.720 [247] main/154/http/127.0.0.1:49676 twophase.lua:428 W> Committed patch_clusterwide at localhost:3302
+2022-03-28 07:41:45.720 [247] main/154/http/127.0.0.1:49676 twophase.lua:428 W> Committed patch_clusterwide at localhost:3303
+2022-03-28 07:41:45.720 [247] main/154/http/127.0.0.1:49676 twophase.lua:428 W> Committed patch_clusterwide at localhost:3304
+2022-03-28 07:41:45.721 [247] main/154/http/127.0.0.1:49676 twophase.lua:428 W> Committed patch_clusterwide at localhost:3305
+2022-03-28 07:41:45.721 [247] main/154/http/127.0.0.1:49676 twophase.lua:573 W> Clusterwide config updated successfully
+2022-03-28 07:41:45.721 [247] main/154/http/127.0.0.1:49676 I> Migrations applied successfully!
+2022-03-28 07:41:45.779 [247] main C> got signal 15 - Terminated
+2022-03-28 07:41:45.779 [247] main/161/trigger_fiber0 I> Starting router configuration
+2022-03-28 07:41:45.780 [247] main/161/trigger_fiber0 I> Calling box.cfg()...
+2022-03-28 07:41:45.780 [247] main/161/trigger_fiber0 I> Box has been configured
+2022-03-28 07:41:45.781 [247] main/163/lua I> Old replicaset and replica objects are outdated.
+2022-03-28 07:41:45.782 [247] main I> tx_binary: stopped

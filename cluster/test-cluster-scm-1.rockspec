@@ -10,6 +10,7 @@ dependencies = {
     'cartridge == 2.7.3-1',
     'crud == 0.10.0-1',
     'migrations == 0.4.2-1',
+	'ddl = 1.6.0',
 }
 build = {
     type = 'none';
